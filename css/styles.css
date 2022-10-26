@@ -12,6 +12,7 @@
   --purple: #310a90;
   --gren: #42e2b8;
   --white: #ffffff;
+  --white-menu: rgba(255, 255, 255, 0.2);
 }
 body {
   margin: 0;
@@ -78,14 +79,14 @@ ul {
   color: var(--main-white);
   list-style: none;
 }
-li {
+.li-menu {
   display: flex;
   align-items: center;
   justify-content: center;
   block-size: 5rem;
   padding-inline: 1rem;
 }
-li:hover {
+.li-menu:hover {
   background-color: var(--main-blue);
   cursor: pointer;
   transition: 0.5s;
@@ -175,7 +176,10 @@ li:hover {
   padding-inline: 0.5rem;
   padding-block: 2.2rem;
 }
-a {
+.project {
+  text-decoration: none;
+}
+.menu {
   text-decoration: none;
   cursor: pointer;
   color: var(--main-white);
@@ -267,7 +271,11 @@ a {
 .red-text {
   margin: 0;
 }
-
+.firma {
+  text-decoration: none;
+  color: var(--main-white);
+  font-style: italic;
+}
 @media screen and (max-width: 768px) {
   .burn {
     font-size: 0.5rem;
@@ -378,4 +386,7 @@ a {
 }
 .active-redes-title {
   color: var(--purple);
+}
+.active-li:hover {
+  background-color: var(--white-menu);
 }
