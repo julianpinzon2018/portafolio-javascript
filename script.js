@@ -34,3 +34,9 @@ burn.addEventListener("click", () => {
 
   isDark = false;
 });
+
+const $saludoCaja = document.querySelector("#saludo-caja");
+window.addEventListener("resize", () => {
+  const v = window.innerHeight;
+  $saludoCaja.style.blockSize = `${v}px`;
+});
