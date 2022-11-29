@@ -303,7 +303,7 @@ ul {
     font-size: 1.5rem;
   }
   .saludo-caja {
-    /* block-size: 40rem; */
+    block-size: 40rem;
   }
   .redes-caja {
     font-size: 0.5rem;
